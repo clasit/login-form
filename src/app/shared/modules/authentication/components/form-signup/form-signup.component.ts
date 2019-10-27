@@ -11,8 +11,6 @@ import {FormSignupFacade} from './form-signup.facade';
 export class FormSignupComponent implements OnInit {
 
   public signupForm: FormGroup;
-  @Input()
-  public title = '';
 
   constructor(private loginFacade: FormSignupFacade) {
   }
