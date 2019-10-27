@@ -1,0 +1,11 @@
+mat-card-content {
+  padding-top: 50px;
+}
+
+mat-card-content > form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    margin: 10px;
+  }
+}

@@ -1,27 +1,32 @@
 # AppLogin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.10.
+## Instalación
+Requiere la instalación de node https://nodejs.org.
 
-## Development server
+Tras clonar el repositorio, ejecutar `npm install`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecutar `ng serve` y navegar a `http://localhost:4200/`.
 
-## Code scaffolding
+## Test manual
+(1) Intentar loguearse con cualquier usuario. Si el usuario no está dado de alta se escribirá en consola el mensaje: "Credenciales no validas."
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+(2) Acceder a "Crear cuenta", se mostrará el formulario de `signup`.
 
-## Build
+(3) Crear un usuario nuevo, rellenar: nombre, e-mail y contraseña.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+(4) Tras crear al usuario se redigirá a la home.
 
-## Running unit tests
+(5) Verificar el usuario creado en el Local Storage del navegador.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+(6) Introducir las credenciales del usuario (email y contraseña) en el formulario de login.
 
-## Running end-to-end tests
+(7) Si las credenciales son correctas aparecerá un diálogo pidiendo el código de validación.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+(8) Para desarrollo el código es `1234`, si el código introducido es correcto se hará el login y se accederá al area privada. El token de sessión y uid se almacenarán en el Local Storage.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## TODO
+- Validación input de los campos del formulario
+- Test unitarios
+- Hacer el log-out
+

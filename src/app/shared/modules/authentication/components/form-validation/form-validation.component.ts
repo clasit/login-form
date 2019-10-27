@@ -5,6 +5,7 @@ import {FormValidationFacade} from './form-validation.facade';
 @Component({
   selector: 'form-validation',
   templateUrl: 'form-validation.component.html',
+  styleUrls: ['form-validation.component.scss'],
   providers: [FormValidationFacade]
 })
 export class FormValidationComponent implements OnInit {
