@@ -7,11 +7,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ProfileComponent} from './pages/restricted/profile/profile.component';
 import {SignupComponent} from './pages/signup/signup.component';
 import {AuthenticationModule} from './shared/modules/authentication/authentication.module';
+import {NavigationBarComponent} from './shared/modules/navigation/navigation-bar/navigation-bar.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 const PageComponents = [
   HomeComponent,
   SignupComponent,
-  ProfileComponent
+  ProfileComponent,
+  NavigationBarComponent
 ];
 
 const UIModules = [
@@ -27,6 +32,13 @@ const UIModules = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (httpClient: HttpClient) => new TranslateHttpLoader(httpClient),
+        deps: [HttpClient]
+      }
+    }),
     ...UIModules
   ],
   bootstrap: [AppComponent]

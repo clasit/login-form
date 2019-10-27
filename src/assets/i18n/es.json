@@ -1,0 +1,30 @@
+{
+  "page": {
+    "profile": {
+      "title": "Bienvenido",
+      "info": "Zona de acceso restringido"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Accede a tu cuenta",
+      "label_email": "E-mail",
+      "label_password": "Contraseña",
+      "button_login": "Acceder",
+      "button_signup": "Crear cuenta"
+    },
+    "signup": {
+      "title": "Regístrate",
+      "label_name": "Nombre",
+      "label_email": "E-mail",
+      "label_password": "Contraseña",
+      "button_signup": "Crear cuenta"
+    },
+    "validation": {
+      "title": "Introduzca el código de verificación que recibirá en su teléfono móvil",
+      "label_code": "Código de verificación",
+      "button_validate": "Validar",
+      "button_cancel": "Cancelar"
+    }
+  }
+}

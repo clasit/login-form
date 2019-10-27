@@ -12,9 +12,6 @@ export class FormLoginComponent implements OnInit {
 
   public loginForm: FormGroup;
 
-  @Input()
-  public title = '';
-
   constructor(private loginFacade: FormLoginFacade) {
   }
 

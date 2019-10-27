@@ -1,0 +1,30 @@
+{
+  "page": {
+    "profile": {
+      "title": "Welcome",
+      "info": "Restricted zone"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Log in into your account",
+      "label_email": "E-mail",
+      "label_password": "Password",
+      "button_login": "Log in",
+      "button_signup": "Sign up"
+    },
+    "signup": {
+      "title": "Sign up",
+      "label_name": "Name",
+      "label_email": "E-mail",
+      "label_password": "Password",
+      "button_signup": "Create Account"
+    },
+    "validation": {
+      "title": "Enter the verification code you will receive on your mobile phone",
+      "label_code": "Verification code",
+      "button_validate": "Validate",
+      "button_cancel": "Cancel"
+    }
+  }
+}

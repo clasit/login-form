@@ -1,12 +1,18 @@
 <mat-card-header>
-  <mat-card-title>Introduzca el código de verificación que recibirá en su teléfono móvil</mat-card-title>
+  <mat-card-title>{{ 'auth.validation.title' | translate }}</mat-card-title>
 </mat-card-header>
 <mat-card-content>
   <form [formGroup]="formValidation" (ngSubmit)="onSubmit()">
     <mat-form-field>
-      <input matInput formControlName="code" placeholder="Código de verificación">
+      <input matInput
+             formControlName="code"
+             placeholder="{{ 'auth.validation.label_code' | translate }}">
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit">Validar</button>
-    <button mat-raised-button type="button" (click)="close()">Cancelar</button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ 'auth.validation.button_validate' | translate }}
+    </button>
+    <button mat-raised-button type="button" (click)="close()">
+      {{ 'auth.validation.button_cancel' | translate }}
+    </button>
   </form>
 </mat-card-content>
