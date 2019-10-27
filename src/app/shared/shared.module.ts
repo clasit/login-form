@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {MatFormFieldModule, MatGridListModule, MatInputModule, MatCardModule, MatDialogModule} from '@angular/material';
+import {MatFormFieldModule, MatGridListModule, MatInputModule, MatCardModule, MatDialogModule, MatButtonModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
@@ -19,7 +19,8 @@ const Materials = [
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
-  MatDialogModule
+  MatDialogModule,
+  MatButtonModule
 ];
 
 @NgModule({

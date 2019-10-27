@@ -1,26 +1,12 @@
-<!-- <form [formGroup]="formValidation" (ngSubmit)="onSubmit()">
-  <h1 mat-dialog-title>Introduzca el código de verificación que recibirá en su teléfono móvil</h1>
-  <mat-dialog-content>
+<mat-card-header>
+  <mat-card-title>Introduzca el código de verificación que recibirá en su teléfono móvil</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+  <form [formGroup]="formValidation" (ngSubmit)="onSubmit()">
     <mat-form-field>
       <input matInput formControlName="code" placeholder="Código de verificación">
     </mat-form-field>
-  </mat-dialog-content>
-  <mat-dialog-actions>
-    <button mat-button type="submit">Validar</button>
-    <button mat-button type="button" (click)="close()">Cancelar</button>
-  </mat-dialog-actions>
-</form> -->
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Introduzca el código de verificación que recibirá en su teléfono móvil</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form [formGroup]="formValidation" (ngSubmit)="onSubmit()">
-      <mat-form-field>
-        <input matInput formControlName="code" placeholder="Código de verificación">
-      </mat-form-field>
-      <button mat-button type="submit">Validar</button>
-      <button mat-button type="button" (click)="close()">Cancelar</button>
-    </form>
-  </mat-card-content>
-</mat-card>
+    <button mat-raised-button color="primary" type="submit">Validar</button>
+    <button mat-raised-button type="button" (click)="close()">Cancelar</button>
+  </form>
+</mat-card-content>

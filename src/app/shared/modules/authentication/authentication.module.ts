@@ -25,7 +25,8 @@ import {FormValidationComponent} from './components/form-validation/form-validat
   exports: [
     FormLoginComponent,
     FormSignupComponent,
-    FormValidationComponent
+    FormValidationComponent,
+    SharedModule
   ]
 })
 export class AuthenticationModule {

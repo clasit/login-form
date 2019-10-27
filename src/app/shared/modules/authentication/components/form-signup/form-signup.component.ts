@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormGroup} from '@angular/forms';
 import {FormSignupFacade} from './form-signup.facade';
 
@@ -11,6 +11,8 @@ import {FormSignupFacade} from './form-signup.facade';
 export class FormSignupComponent implements OnInit {
 
   public signupForm: FormGroup;
+  @Input()
+  public title = '';
 
   constructor(private loginFacade: FormSignupFacade) {
   }
